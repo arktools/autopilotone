@@ -1,0 +1,22 @@
+This software is currently under development.
+
+The objective is to provide modular guidance/navigation/ and control algorithms for various autopilot boards and for various vehicle types.
+
+The planned list of supported platforms:
+    px4 (arm)
+    arduino
+    JSBSim based hardware in the loop
+
+Vehicles to be supported:
+    quadrotors
+    ground vehicles
+    airplanes
+    helicopters
+
+The communication protocol will be mavlink.
+
+Notes:
+
+Development of JSBSim software in the loop. This will talk with mavlink to qgroundcontrol, and uses flightgear multiplayer packets to talk to a flightgear server (for visualization).
+
+The autopilot design will be thread safe and use mutex locks to accomplish this.
