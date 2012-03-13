@@ -20,88 +20,128 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// This text will be stored with each diagram;  use it for notes.</help_text><zoom_level>7</zoom_level><element><type>com.umlet.element.base.Class</type><coordinates><x>217</x><y>420</y><w>70</w><h>21</h></coordinates><panel_attributes>I2C Bus</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>217</x><y>343</y><w>70</w><h>21</h></coordinates><panel_attributes>Serial 0</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>21</x><y>336</y><w>84</w><h>21</h></coordinates><panel_attributes>Ground Station</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>21</x><y>378</y><w>84</w><h>21</h></coordinates><panel_attributes>GPS</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>84</x><y>315</y><w>146</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;
-mavlink</panel_attributes><additional_attributes>133;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>84</x><y>350</y><w>146</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
-nmea</panel_attributes><additional_attributes>133;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>21</x><y>420</y><w>84</w><h>21</h></coordinates><panel_attributes>IMU</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>217</x><y>378</y><w>70</w><h>21</h></coordinates><panel_attributes>Serial 1</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>84</x><y>392</y><w>146</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
-i2c packet</panel_attributes><additional_attributes>133;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>406</x><y>343</y><w>98</w><h>21</h></coordinates><panel_attributes>Comm Parser</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>406</x><y>378</y><w>98</w><h>21</h></coordinates><panel_attributes>GPS Reader</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>266</x><y>315</y><w>153</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;
-mavlink</panel_attributes><additional_attributes>140;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>266</x><y>350</y><w>153</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
-nmea</panel_attributes><additional_attributes>140;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>924</x><y>294</y><w>70</w><h>84</h></coordinates><panel_attributes>Navigator
+// This text will be stored with each diagram;  use it for notes.</help_text><zoom_level>5</zoom_level><element><type>com.umlet.element.base.Class</type><coordinates><x>320</x><y>500</y><w>50</w><h>15</h></coordinates><panel_attributes>I2C Bus</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>320</x><y>445</y><w>50</w><h>15</h></coordinates><panel_attributes>Serial 0</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>180</x><y>440</y><w>60</w><h>15</h></coordinates><panel_attributes>Ground Station</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>180</x><y>470</y><w>60</w><h>15</h></coordinates><panel_attributes>GPS</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>225</x><y>425</y><w>104</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;
+mavlink</panel_attributes><additional_attributes>95;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>225</x><y>450</y><w>104</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+nmea</panel_attributes><additional_attributes>95;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>180</x><y>500</y><w>60</w><h>15</h></coordinates><panel_attributes>IMU</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>320</x><y>470</y><w>50</w><h>15</h></coordinates><panel_attributes>Serial 1</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>225</x><y>480</y><w>104</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+i2c packet</panel_attributes><additional_attributes>95;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>455</x><y>445</y><w>70</w><h>15</h></coordinates><panel_attributes>Message Reader</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>455</x><y>470</y><w>70</w><h>15</h></coordinates><panel_attributes>GPS Reader</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>355</x><y>425</y><w>109</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;
+mavlink</panel_attributes><additional_attributes>100;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>355</x><y>450</y><w>109</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+nmea</panel_attributes><additional_attributes>100;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1015</x><y>610</y><w>65</w><h>60</h></coordinates><panel_attributes>Navigator
 --
 -position
 -velocity
 -attitude
 -mutex
 --
--update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1057</x><y>378</y><w>70</w><h>56</h></coordinates><panel_attributes>Controller
+-update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1015</x><y>695</y><w>65</w><h>70</h></coordinates><panel_attributes>Controller
 --
 -mutex
 --
--update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1029</x><y>245</y><w>70</w><h>56</h></coordinates><panel_attributes>Guide
+-update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1015</x><y>545</y><w>65</w><h>40</h></coordinates><panel_attributes>Guide
 --
 -waypoints
--mutex
 --
--update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>217</x><y>525</y><w>70</w><h>21</h></coordinates><panel_attributes>EEPROM
-</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>406</x><y>525</y><w>98</w><h>56</h></coordinates><panel_attributes>EEPROM Manager
+-update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>320</x><y>575</y><w>50</w><h>15</h></coordinates><panel_attributes>EEPROM
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>455</x><y>575</y><w>70</w><h>40</h></coordinates><panel_attributes>EEPROM Manager
 --
 gains
-sensor calib.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>266</x><y>497</y><w>153</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;
-variables</panel_attributes><additional_attributes>140;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>14</x><y>308</y><w>105</w><h>224</h></coordinates><panel_attributes>External</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>203</x><y>308</y><w>98</w><h>245</h></coordinates><panel_attributes>Board
-</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>385</x><y>308</y><w>140</w><h>287</h></coordinates><panel_attributes>Board Interface</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>406</x><y>420</y><w>98</w><h>21</h></coordinates><panel_attributes>IMU Reader</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1001</x><y>84</y><w>84</w><h>70</h></coordinates><panel_attributes>Planner
+sensor calib.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>355</x><y>555</y><w>109</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;
+variables</panel_attributes><additional_attributes>100;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>175</x><y>420</y><w>75</w><h>160</h></coordinates><panel_attributes>External</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>310</x><y>420</y><w>70</w><h>175</h></coordinates><panel_attributes>Board
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>440</x><y>420</y><w>100</w><h>205</h></coordinates><panel_attributes>Board Interface</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>455</x><y>500</y><w>70</w><h>15</h></coordinates><panel_attributes>IMU Reader</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1015</x><y>475</y><w>65</w><h>50</h></coordinates><panel_attributes>Planner
 --
 -final waypoint
 -constraints
 -mutex
 --
--update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>266</x><y>392</y><w>153</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
-i2c packet</panel_attributes><additional_attributes>140;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>0</x><y>287</y><w>315</w><h>280</h></coordinates><panel_attributes>JSBSim Replaces these Components during HIL
-</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>217</x><y>455</y><w>70</w><h>21</h></coordinates><panel_attributes>TIMERS
-</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>406</x><y>455</y><w>98</w><h>21</h></coordinates><panel_attributes>Servo Manager
-</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>266</x><y>427</y><w>153</w><h>49</h></coordinates><panel_attributes>lt=-&gt;&gt;
-pwm</panel_attributes><additional_attributes>140;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>385</x><y>217</y><w>147</w><h>70</h></coordinates><panel_attributes>NUTTX
+-update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>355</x><y>480</y><w>109</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+i2c packet</panel_attributes><additional_attributes>100;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>165</x><y>405</y><w>225</w><h>200</h></coordinates><panel_attributes>JSBSim Replaces these Components during HIL
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>320</x><y>525</y><w>50</w><h>15</h></coordinates><panel_attributes>TIMERS
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>455</x><y>525</y><w>70</w><h>15</h></coordinates><panel_attributes>Servo Manager
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>355</x><y>505</y><w>109</w><h>35</h></coordinates><panel_attributes>lt=-&gt;&gt;
+pwm</panel_attributes><additional_attributes>100;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>440</x><y>355</y><w>105</w><h>50</h></coordinates><panel_attributes>NUTTX
 --
 need to fit this in
 to figure out nuttx process
 relationship with
 mutex locks
-</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>868</x><y>217</y><w>91</w><h>49</h></coordinates><panel_attributes>Comm Manager
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>1015</x><y>405</y><w>65</w><h>40</h></coordinates><panel_attributes>Comm Manager
 --
 -mutex
 --
--update</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>483</x><y>287</y><w>454</w><h>111</h></coordinates><panel_attributes>lt=&lt;&lt;-
-gps position/ 
-velocity</panel_attributes><additional_attributes>441;21;21;98</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>217</x><y>490</y><w>70</w><h>21</h></coordinates><panel_attributes>PWM</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>21</x><y>455</y><w>84</w><h>21</h></coordinates><panel_attributes>SERVOS</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>84</x><y>427</y><w>146</w><h>64</h></coordinates><panel_attributes>lt=&gt;&gt;-
+-update
+-parseMessage</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>510</x><y>450</y><w>174</w><h>34</h></coordinates><panel_attributes>lt=&lt;&lt;-
+GPS Channel</panel_attributes><additional_attributes>165;20;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>320</x><y>550</y><w>50</w><h>15</h></coordinates><panel_attributes>PWM</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>180</x><y>525</y><w>60</w><h>15</h></coordinates><panel_attributes>SERVOS</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>225</x><y>505</y><w>104</w><h>46</h></coordinates><panel_attributes>lt=&gt;&gt;-
 servo
-output</panel_attributes><additional_attributes>133;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>21</x><y>490</y><w>84</w><h>21</h></coordinates><panel_attributes>RADIO</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>84</x><y>462</y><w>146</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;-
+output</panel_attributes><additional_attributes>95;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>180</x><y>550</y><w>60</w><h>15</h></coordinates><panel_attributes>RADIO</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>225</x><y>530</y><w>104</w><h>46</h></coordinates><panel_attributes>lt=&lt;&lt;-
 manual
-control</panel_attributes><additional_attributes>133;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>406</x><y>490</y><w>98</w><h>21</h></coordinates><panel_attributes>Radio Reader</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>266</x><y>462</y><w>153</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
-pwm</panel_attributes><additional_attributes>140;35;21;35</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>938</x><y>224</y><w>104</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
-waypoints</panel_attributes><additional_attributes>91;42;21;28</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>483</x><y>399</y><w>587</w><h>146</h></coordinates><panel_attributes>lt=&lt;&lt;-
-gains</panel_attributes><additional_attributes>574;21;21;133</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>483</x><y>343</y><w>454</w><h>97</h></coordinates><panel_attributes>lt=&lt;&lt;-
-accelerations/
-attitude rates</panel_attributes><additional_attributes>441;21;21;84</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>483</x><y>371</y><w>587</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;-
-servo positions</panel_attributes><additional_attributes>21;91;574;21</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>1064</x><y>245</y><w>82</w><h>146</h></coordinates><panel_attributes>lt=&lt;&lt;-
-current
-waypoint</panel_attributes><additional_attributes>49;133;35;21</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>973</x><y>315</y><w>111</w><h>79</h></coordinates><panel_attributes>lt=&lt;&lt;-
-position/
-velocity/
-attitude</panel_attributes><additional_attributes>98;63;21;21</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>483</x><y>413</y><w>659</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-
-sensor
-calibration</panel_attributes><additional_attributes>21;21;616;63;21;147</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>917</x><y>119</y><w>116</w><h>125</h></coordinates><panel_attributes>lt=&lt;&lt;-
-final waypoints/
-constraints</panel_attributes><additional_attributes>84;21;42;112</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>483</x><y>231</y><w>398</w><h>132</h></coordinates><panel_attributes>lt=&lt;&lt;-
-messages</panel_attributes><additional_attributes>385;21;21;119</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>1015</x><y>133</y><w>87</w><h>125</h></coordinates><panel_attributes>lt=&lt;&lt;-
-waypoints</panel_attributes><additional_attributes>56;112;35;21</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>546</x><y>49</y><w>609</w><h>560</h></coordinates><panel_attributes>Autopilot Code</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>581</x><y>84</y><w>196</w><h>70</h></coordinates><panel_attributes>DataMarshaller
+control</panel_attributes><additional_attributes>95;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>455</x><y>550</y><w>70</w><h>15</h></coordinates><panel_attributes>Radio Reader</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>355</x><y>530</y><w>109</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+pwm</panel_attributes><additional_attributes>100;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>685</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+EEPROM Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>510</x><y>480</y><w>174</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+IMU Channel</panel_attributes><additional_attributes>165;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>510</x><y>505</y><w>174</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Servo Channel</panel_attributes><additional_attributes>15;25;165;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>510</x><y>410</y><w>174</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Comm Channel</panel_attributes><additional_attributes>165;15;15;40</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>485</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+PathPlanWaypoints Channel</panel_attributes><additional_attributes>15;25;215;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>975</x><y>600</y><w>150</w><h>80</h></coordinates><panel_attributes>Navigation Thread</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>675</x><y>400</y><w>140</w><h>375</h></coordinates><panel_attributes>DataMarshaller
 --
--channelList: LinkedList
+-channelList: LinkedList&lt;Channel&gt;
+    GPS
+    IMU
+    Radio
+    Comm
+    EEPROM
+    Waypoints
+    PathPlanWaypoints
+    CurrentWaypoint
+    Position/Attitude
+    Velocity
+    SensorCal
 --
 addChannel(String name, Channel c)
 removeChannel(String name)
-getChannel(String name)</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>791</x><y>84</y><w>196</w><h>70</h></coordinates><panel_attributes>Channel
+getChannel(String name)</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>665</x><y>810</y><w>150</w><h>50</h></coordinates><panel_attributes>Channel
 --
-- subscriptionList: LinkedList
+-subscriptionList: LinkedList&lt;Subscriber&gt;
 --
 int registerSubscription(*Subscriber)
 void removeSubscription(int ID)
 updateChannel()
-</panel_attributes><additional_attributes/></element></umlet_diagram>
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>945</x><y>805</y><w>105</w><h>40</h></coordinates><panel_attributes>Subscription
+--
+update()
+blockingPoll()
+nonblockingPoll()</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>965</x><y>895</y><w>125</w><h>40</h></coordinates><panel_attributes>SameThreadExecutionSubscription
+--
+update()
+blockingPoll()
+nonblockingPoll()</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>695</x><y>895</y><w>110</w><h>40</h></coordinates><panel_attributes>AnonymousPipeSubscription
+--
+update()
+blockingPoll()
+nonblockingPoll()</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>975</x><y>830</y><w>78</w><h>74</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>30;15;50;65</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>730</x><y>830</y><w>254</w><h>74</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>245;15;15;65</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>25</x><y>0</y><w>380</w><h>35</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;someStereotype&gt;&gt;</panel_attributes><additional_attributes>15;30;375;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>670</x><y>760</y><w>67</w><h>59</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;uses&gt;&gt;</panel_attributes><additional_attributes>40;50;35;15</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>735</x><y>760</y><w>274</w><h>54</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;uses&gt;&gt;</panel_attributes><additional_attributes>265;45;15;15</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>390</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Comm Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>405</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Waypoints Channel</panel_attributes><additional_attributes>15;25;215;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>415</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Constraints Channel</panel_attributes><additional_attributes>15;25;215;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>835</x><y>895</y><w>110</w><h>40</h></coordinates><panel_attributes>NamedPipeSubscription
+--
+update()
+blockingPoll()
+nonblockingPoll()</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>880</x><y>830</y><w>119</w><h>74</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>110;15;15;65</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>465</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Constraints Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>475</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Waypoints Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>530</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Waypoints Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>540</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+PathPlanWaypoints Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>550</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+CurrentWaypoint Channel</panel_attributes><additional_attributes>15;25;215;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>600</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+GPS Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>610</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+IMU Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>620</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Position/Attitude Channel</panel_attributes><additional_attributes>15;25;215;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>630</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Velocity Channel</panel_attributes><additional_attributes>15;25;215;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>725</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Servo Position Channel</panel_attributes><additional_attributes>15;25;215;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>675</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+CurrentWaypoint Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>695</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Position/Attitude Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>800</x><y>705</y><w>224</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Velocity Channel</panel_attributes><additional_attributes>215;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>510</x><y>490</y><w>174</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+SensorCal Channel</panel_attributes><additional_attributes>165;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>510</x><y>565</y><w>174</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+SensorCal Channel</panel_attributes><additional_attributes>15;25;165;25</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>510</x><y>575</y><w>174</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;-
+EEPROM Channel</panel_attributes><additional_attributes>165;25;15;25</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>640</x><y>345</y><w>525</w><h>610</h></coordinates><panel_attributes>Autopilot Code</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>975</x><y>390</y><w>150</w><h>65</h></coordinates><panel_attributes>Comm Thread</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>975</x><y>465</y><w>150</w><h>130</h></coordinates><panel_attributes>Guidance Thread</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>975</x><y>685</y><w>150</w><h>90</h></coordinates><panel_attributes>Control Thread</panel_attributes><additional_attributes/></element></umlet_diagram>
