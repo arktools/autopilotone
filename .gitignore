@@ -1,0 +1,5 @@
+.depend
+.built
+.context
+*.o
+Make.dep
