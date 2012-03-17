@@ -2,7 +2,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -13,31 +12,30 @@ extern "C" {
 
 #include <nuttx/init.h>
 #include <nuttx/arch.h>
-
 #ifdef __cplusplus
 }
 #endif
 
-#ifndef NAVIGATOR_H
-#define NAVIGATOR_H
+#ifndef GUIDANCE_H
+#define GUIDANCE_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-    extern int navigator_main(int argc, char* argv[]);
+    extern int guidance_main(int argc, char* argv[]);
 #ifdef __cplusplus
 }
 #endif
 
 #ifdef __cplusplus
-class Navigator
+class Guidance
 {
     public:
-        Navigator(void) {}
-        ~Navigator(void) {}
+        Guidance(void) {}
+        ~Guidance(void) {}
 
         void HelloWorld(void) {
-            printf("Hello from navigator\n");
+            printf("Hello from guidance!\n");
         }
 };
 #endif

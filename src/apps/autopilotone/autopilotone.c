@@ -35,6 +35,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <autopilotone.h>
 #include <sched.h>
 
@@ -62,5 +63,22 @@ int autopilotone_main(int argc, char *argv[])
     }
 
 
+    i = task_create("guidance", SCHED_PRIORITY_DEFAULT, 768, (main_t) guidance_main,
+            (argv) ? argv[1] : (const char**)NULL);
+
+    if(i > 0) {
+        printf("Task created\n");
+
+        struct sched_param param;
+        sched_getparam(0, &param);
+        sched_setscheduler(i, SCHED_RR, &param);
+    } else {
+        printf("Task not created");
+    }
+
+    while(1) {
+        printf("Hello from main\n");
+        usleep(500000);
+    }
     return 0;
 }

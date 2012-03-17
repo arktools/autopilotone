@@ -37,7 +37,7 @@
 // Included Files
 //***************************************************************************
 
-#include <navigator.h>
+#include <guidance.h>
 
 //***************************************************************************
 // Definitions
@@ -89,14 +89,12 @@
  * Name: user_start/nxhello_main
  ****************************************************************************/
 
-//extern "C" int navigator_main(int argc, char *argv[]);
-
-int navigator_main(int argc, char *argv[])
+int guidance_main(int argc, char *argv[])
 {
 
-    Navigator nav;
+    Guidance guide;
     while(1) {
-        nav.HelloWorld();
+        guide.HelloWorld();
         usleep(100000);
     }
 

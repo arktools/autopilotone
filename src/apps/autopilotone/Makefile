@@ -41,7 +41,7 @@ include $(APPDIR)/Make.defs
 
 ASRCS		=
 CSRCS		= autopilotone.c
-CXXSRCS		= navigator.cxx 
+CXXSRCS		= navigator.cxx guidance.cxx 
 
 AOBJS		= $(ASRCS:.S=$(OBJEXT))
 COBJS		= $(CSRCS:.c=$(OBJEXT))
