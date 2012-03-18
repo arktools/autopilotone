@@ -40,8 +40,8 @@ include $(APPDIR)/Make.defs
 # Hello, World! C++ Example
 
 ASRCS		=
-CSRCS		= autopilotone.c
-CXXSRCS		= navigator.cxx guidance.cxx 
+CSRCS		= 
+CXXSRCS		= autopilotone.cxx navigator.cxx guidance.cxx data/DataMarshaller.cxx
 
 AOBJS		= $(ASRCS:.S=$(OBJEXT))
 COBJS		= $(CSRCS:.c=$(OBJEXT))
