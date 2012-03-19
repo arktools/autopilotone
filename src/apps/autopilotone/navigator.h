@@ -14,6 +14,10 @@ extern "C" {
 #include <nuttx/init.h>
 #include <nuttx/arch.h>
 
+#include "data/Subscription.h"
+#include "data/AnonymousPipeSubscription.h"
+#include "data/DataMarshaller.h"
+
 #ifdef __cplusplus
 }
 #endif
@@ -39,6 +43,10 @@ class Navigator
         void HelloWorld(void) {
             printf("Hello from navigator\n");
         }
+
+    private:
+        Subscription *s;
+
 };
 #endif
 

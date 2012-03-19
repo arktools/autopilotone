@@ -36,13 +36,14 @@
 
 #include "autopilotone.h"
 
-/** Example of a standalone application
-*/ 
+DataMarshaller dataMarsh;
+
 int autopilotone_main(int argc, char *argv[])
 {
     int i = 0;
 
-    //DataMarshaller dm;
+    Channel *c = dataMarsh.AddChannel("dummy");  
+    dataMarsh.RegisterSubscription("dummy", new AnonymousPipeSubscription());
 
     printf("Application started!\n");
     fflush(stdout);
@@ -60,7 +61,7 @@ int autopilotone_main(int argc, char *argv[])
         printf("Task not created");
     }
 
-
+/*
     i = task_create("guidance", SCHED_PRIORITY_DEFAULT, 768, (main_t) guidance_main,
             (const char**)NULL);
 
@@ -73,9 +74,10 @@ int autopilotone_main(int argc, char *argv[])
     } else {
         printf("Task not created");
     }
+    */
 
     while(1) {
-        printf("Hello from main\n");
+        c->Update((void*) NULL);
         usleep(500000);
     }
     return 0;

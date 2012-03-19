@@ -91,13 +91,19 @@
 
 //extern "C" int navigator_main(int argc, char *argv[]);
 
+extern DataMarshaller dataMarsh;
+
 int navigator_main(int argc, char *argv[])
 {
 
     Navigator nav;
+    AnonymousPipeSubscription *sub = new AnonymousPipeSubscription();
+
+    dataMarsh.RegisterSubscription("dummy", sub);
+
     while(1) {
-        nav.HelloWorld();
-        usleep(100000);
+        usleep(10000000);
+        sub->Receive();
     }
 
     return 0;

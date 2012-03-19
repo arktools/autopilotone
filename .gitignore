@@ -3,3 +3,4 @@
 .context
 *.o
 Make.dep
+*.swp

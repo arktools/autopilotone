@@ -1,19 +1,19 @@
 
 #include "DataMarshaller.h"
 
-void DataMarshaller::AddChannel() {
+Channel* DataMarshaller::AddChannel(const char* name) {
 
-    Channel *c = new Channel();
-    //Channels.insert(1, c);
+    c = new Channel(name);
+    return c;
 }
 
 void DataMarshaller::DeleteChannel() {
     // Not implemented
 }
 
-bool DataMarshaller::RegisterSubscription(Subscription *s) {
-    // Not implemented
-    return false;
+bool DataMarshaller::RegisterSubscription(const char* channelName, Subscription *s) {
+    c->RegisterSubscription(s);
+    return true;
 }
 
 
