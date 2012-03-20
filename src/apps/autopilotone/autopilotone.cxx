@@ -78,7 +78,7 @@ int autopilotone_main(int argc, char *argv[])
 
     while(1) {
         c->Update((void*) NULL);
-        usleep(500000);
+        usleep(5000000);
     }
     return 0;
 }

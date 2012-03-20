@@ -102,7 +102,7 @@ int navigator_main(int argc, char *argv[])
     dataMarsh.RegisterSubscription("dummy", sub);
 
     while(1) {
-        usleep(10000000);
+        usleep(1000000);
         sub->Receive();
     }
 
